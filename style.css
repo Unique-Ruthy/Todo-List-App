@@ -237,9 +237,6 @@ input:checked ~ .bubble::after {
 }
 
 @media (max-width: 420px) {
-  * {
-    border: 1px solid green;
-  }
   .create-todo input[type="text"] {
     /* width: 100%; */
   }
