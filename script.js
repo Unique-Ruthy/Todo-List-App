@@ -94,6 +94,7 @@ function DisplayTodos() {
 
       DisplayTodos();
     });
+    g;
 
     edit.addEventListener("click", (e) => {
       const input = content.querySelector("input");

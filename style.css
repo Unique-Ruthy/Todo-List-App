@@ -12,6 +12,12 @@
   --business-glow: 0px 0px 4px rgba(50, 130, 238, 0.75);
   --personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
 }
+
+.innerContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -154,7 +160,7 @@ input:checked ~ .bubble::after {
 
 .create-todo input[type="submit"] {
   display: block;
-  width: 100%;
+  width: 48%;
   font-size: 1.125rem;
   padding: 1rem 1.5rem;
   color: #fff;
@@ -228,4 +234,41 @@ input:checked ~ .bubble::after {
 .todo-item.done .todo-content input {
   text-decoration: line-through;
   color: var(--grey);
+}
+
+@media (max-width: 420px) {
+  * {
+    border: 1px solid green;
+  }
+  .create-todo input[type="text"] {
+    /* width: 100%; */
+  }
+  .todo-item .actions .edit {
+    font-size: 0.6rem;
+  }
+
+  .todo-item .actions .delete {
+    font-size: 0.6rem;
+  }
+
+  .todo-item .todo-content input {
+    font-size: 0.9rem;
+  }
+
+  .create-todo input[type="submit"] {
+    margin: 0 auto;
+  }
+
+  .create-todo .options label {
+    padding: 0.8rem;
+  }
+
+  .bubble {
+    width: 15px;
+    height: 15px;
+  }
+
+  /* .bubble::after {
+    border-radius: 20px;
+  } */
 }
