@@ -266,6 +266,11 @@ input:checked ~ .bubble::after {
     height: 15px;
   }
 
+  .greeting .title,
+  .greeting .title input {
+    font-size: 1.2rem;
+  }
+
   /* .bubble::after {
     border-radius: 20px;
   } */
