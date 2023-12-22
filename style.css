@@ -160,6 +160,7 @@ input:checked ~ .bubble::after {
 
 .create-todo input[type="submit"] {
   display: block;
+  margin: 0 auto;
   width: 48%;
   font-size: 1.125rem;
   padding: 1rem 1.5rem;
